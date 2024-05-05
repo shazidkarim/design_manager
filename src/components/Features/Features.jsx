@@ -42,7 +42,7 @@ const Features = () => {
     return (
        <>
        <h1 className="font-sans text-[40px] text-center m-10">Features</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto max-w-screen-2xl p-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto max-w-screen-2xl p-4 mb-20">
         {features.map((feature, index) => (
           <div key={index} className="bg-white hover:shadow rounded-lg p-10">
             <img className="w-[40%] m-auto p-5" src={feature.img} alt="" />
