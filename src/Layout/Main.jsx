@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "../pages/Shared/Footer/Footer";
 import Navbar from "../pages/Shared/Navbar/Navbar";
 import Banner from "../components/Banner/Banner";
+import Features from "../components/Features/Features";
 
 
 const Main = () => {
@@ -9,6 +10,7 @@ const Main = () => {
         <div>
             <Navbar></Navbar>
             <Banner></Banner>
+            <Features></Features>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>
