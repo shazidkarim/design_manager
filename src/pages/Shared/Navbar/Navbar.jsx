@@ -3,11 +3,15 @@ import logo from "../../../../assets/design_manager_logo.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const toggleFeaturesMenu = () => {
+    setIsFeaturesOpen(!isFeaturesOpen);
+  };
   return (
     <nav className="bg-[#f9fafb] text-black p-4">
       <div className="container mx-auto flex justify-between items-center">
