@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "../../../../assets/design_manager_logo.svg";
+import { IoMdArrowDown } from "react-icons/io";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,14 +20,31 @@ const Navbar = () => {
           <img src={logo} alt="Design Manager" className="h-8 mr-4" />
           <ul className="hidden md:flex list-none">
             <li className="nav-item">
-              <a href="#" className="text-black hover:text-blue-500 px-3 py-2">
-                Features
+              <a href="#" className="text-black hover:text-blue-500 px-3 py-2" onClick={toggleFeaturesMenu}>
+                Features <IoMdArrowDown />
               </a>
+              {isFeaturesOpen && (
+                <ul className="absolute bg-white shadow-lg rounded-md mt-2">
+                  <li>
+                    <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">All Features</a>
+                  </li>
+                  <li>
+                    <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Project Management</a>
+                  </li>
+                  <li>
+                    <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Purchasing</a>
+                  </li>
+                  <li>
+                    <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Accounting</a>
+                  </li>
+                </ul>
+              )}
             </li>
             <li className="nav-item">
               <a href="#" className="text-black hover:text-blue-500 px-3 py-2">
                 Pricing
               </a>
+          
             </li>
             <li className="nav-item">
               <a href="#" className="text-black hover:text-blue-500 px-3 py-2">
