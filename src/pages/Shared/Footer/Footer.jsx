@@ -2,8 +2,8 @@
 
 const Footer = () => {
     return (
-        <footer className="bg-[#f9fafb] text-black py-6">
-        <div className="container mx-auto flex flex-wrap justify-between">
+        <footer className="bg-[#f9fafb] text-black py-6 pt-10 ">
+        <div className="container mx-auto flex flex-wrap justify-between p-5">
           <div className="w-full md:w-1/2 lg:w-auto mb-4 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Resources</h3>
             <ul>
