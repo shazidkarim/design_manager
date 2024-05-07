@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../../../../assets/design_manager_logo.svg";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
     <nav className="bg-[#f9fafb] text-black p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center ">
-          <img src={logo} alt="Design Manager" className="h-8 mr-4" />
+          <Link to="/"> <img src={logo} alt="Design Manager" className="h-8 mr-4" /></Link>
           <ul className="hidden md:flex list-none">
             <li className="nav-item">
               <a href="#" className="text-black hover:text-blue-500 px-3 py-2 flex items-center justify-center " onClick={toggleFeaturesMenu}>
@@ -42,9 +43,9 @@ const Navbar = () => {
               )}
             </li>
             <li className="nav-item">
-              <a href="#" className="text-black hover:text-blue-500 px-3 py-2 flex items-center justify-center ">
+              <Link to="/pricing" className="text-black hover:text-blue-500 px-3 py-2 flex items-center justify-center ">
                 Pricing
-              </a>
+              </Link>
           
             </li>
             <li className="nav-item">
